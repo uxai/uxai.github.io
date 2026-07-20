@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vajeh — Farsi Typing Trainer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="pattern-band" aria-hidden="true"></div>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">Vajeh<span>واژه</span></div>
+    <div class="live-wpm" title="Words per minute, this session">
+      <span id="wpmValue">0</span><span class="unit">WPM</span>
+    </div>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark mode">☀</button>
+  </header>
+
+  <main class="stage">
+    <p class="eyebrow" id="loadStatus">loading words…</p>
+
+    <div class="word-display">
+      <h1 class="farsi-word" id="farsiWord">&nbsp;</h1>
+      <p class="english-word" id="translation">&nbsp;</p>
+    </div>
+
+    <div class="tiles" id="tiles" aria-live="off"></div>
+
+    <input
+      id="typer"
+      class="typer-input"
+      type="text"
+      dir="rtl"
+      autocomplete="off"
+      autocapitalize="off"
+      autocorrect="off"
+      spellcheck="false"
+      inputmode="text"
+      aria-label="Type the highlighted Farsi letter using your keyboard"
+    >
+
+    <p class="hint">Type on your normal (English) keyboard — each key maps to its position on the standard Iranian keyboard layout, shown in the corner of every tile.</p>
+  </main>
+
+  <footer class="stats">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <p class="stat-card-label">Today</p>
+        <div class="stat-row">
+          <span class="stat-name">WPM</span>
+          <span class="stat-value" id="todayWpm">0</span>
+          <span class="delta flat" id="wpmDelta">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name">Words</span>
+          <span class="stat-value" id="todayWords">0</span>
+          <span class="delta flat" id="wordsDelta">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name">Accuracy</span>
+          <span class="stat-value" id="todayAcc">100%</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name">Mistakes</span>
+          <span class="stat-value" id="todayMistakes">0</span>
+        </div>
+      </div>
+
+      <div class="stat-card muted-card">
+        <p class="stat-card-label">Yesterday</p>
+        <div class="stat-row">
+          <span class="stat-name">WPM</span>
+          <span class="stat-value" id="yestWpm">0</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name">Words</span>
+          <span class="stat-value" id="yestWords">0</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name">Accuracy</span>
+          <span class="stat-value" id="yestAcc">100%</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name">Mistakes</span>
+          <span class="stat-value" id="yestMistakes">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="alltime-strip">
+      <div class="alltime-item">
+        <span class="alltime-value" id="bestWpm">0</span>
+        <span class="alltime-label">best WPM</span>
+      </div>
+      <div class="alltime-item">
+        <span class="alltime-value" id="streak">0</span>
+        <span class="alltime-label">day streak</span>
+      </div>
+      <div class="alltime-item">
+        <span class="alltime-value" id="totalWords">0</span>
+        <span class="alltime-label">words all time</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

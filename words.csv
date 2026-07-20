@@ -1,0 +1,502 @@
+farsi,english
+صفر,zero
+یک,one
+دو,two
+سه,three
+چهار,four
+پنج,five
+شش,six
+هفت,seven
+هشت,eight
+نه,nine
+ده,ten
+یازده,eleven
+دوازده,twelve
+سیزده,thirteen
+چهارده,fourteen
+پانزده,fifteen
+شانزده,sixteen
+هفده,seventeen
+هجده,eighteen
+نوزده,nineteen
+بیست,twenty
+سی,thirty
+چهل,forty
+پنجاه,fifty
+شصت,sixty
+هفتاد,seventy
+هشتاد,eighty
+نود,ninety
+صد,hundred
+هزار,thousand
+شنبه,Saturday
+یکشنبه,Sunday
+دوشنبه,Monday
+سه شنبه,Tuesday
+چهارشنبه,Wednesday
+پنجشنبه,Thursday
+جمعه,Friday
+فروردین,Farvardin
+اردیبهشت,Ordibehesht
+خرداد,Khordad
+تیر,Tir
+مرداد,Mordad
+شهریور,Shahrivar
+مهر,Mehr
+آبان,Aban
+آذر,Azar
+دی,Dey
+بهمن,Bahman
+اسفند,Esfand
+مادر,mother
+پدر,father
+برادر,brother
+خواهر,sister
+پسر,son
+دختر,daughter
+همسر,spouse
+شوهر,husband
+زن,wife
+مرد,man
+بچه,child
+نوه,grandchild
+عمو,uncle paternal
+عمه,aunt paternal
+دایی,uncle maternal
+خاله,aunt maternal
+پدربزرگ,grandfather
+مادربزرگ,grandmother
+خانواده,family
+دوست,friend
+سر,head
+مو,hair
+چشم,eye
+گوش,ear
+بینی,nose
+دهان,mouth
+لب,lip
+دندان,tooth
+زبان,tongue
+گردن,neck
+شانه,shoulder
+دست,hand
+انگشت,finger
+ناخن,nail
+بازو,arm
+پا,leg
+زانو,knee
+قلب,heart
+معده,stomach
+کمر,back
+پوست,skin
+صورت,face
+ابرو,eyebrow
+مژه,eyelash
+پیشانی,forehead
+قرمز,red
+آبی,blue
+سبز,green
+زرد,yellow
+سفید,white
+سیاه,black
+نارنجی,orange
+بنفش,purple
+صورتی,pink
+قهوه ای,brown
+خاکستری,gray
+طلایی,gold
+نقره ای,silver
+کرم,cream
+یاسی,lilac
+سگ,dog
+گربه,cat
+اسب,horse
+گاو,cow
+گوسفند,sheep
+بز,goat
+شیر,lion
+ببر,tiger
+فیل,elephant
+خرس,bear
+گرگ,wolf
+روباه,fox
+خرگوش,rabbit
+موش,mouse
+مرغ,hen
+خروس,rooster
+اردک,duck
+ماهی,fish
+مار,snake
+عقرب,scorpion
+پروانه,butterfly
+زنبور,bee
+مورچه,ant
+عنکبوت,spider
+میمون,monkey
+زرافه,giraffe
+پرنده,bird
+کبوتر,pigeon
+لاک پشت,turtle
+پلنگ,leopard
+ژله,jelly
+نان,bread
+برنج,rice
+گوشت,meat
+تخم مرغ,egg
+پنیر,cheese
+ماست,yogurt
+شیر,milk
+کره,butter
+روغن,oil
+نمک,salt
+شکر,sugar
+فلفل,pepper
+سیب,apple
+موز,banana
+پرتقال,orange fruit
+انگور,grape
+هندوانه,watermelon
+خربزه,melon
+گیلاس,cherry
+توت فرنگی,strawberry
+انار,pomegranate
+خرما,date
+گردو,walnut
+پسته,pistachio
+بادام,almond
+سیب زمینی,potato
+گوجه فرنگی,tomato
+پیاز,onion
+سیر,garlic
+هویج,carrot
+خیار,cucumber
+کاهو,lettuce
+چای,tea
+قهوه,coffee
+آب,water
+آبمیوه,juice
+سوپ,soup
+سالاد,salad
+کیک,cake
+خانه,house
+اتاق,room
+آشپزخانه,kitchen
+حمام,bathroom
+در,door
+پنجره,window
+دیوار,wall
+سقف,ceiling
+کف,floor
+میز,table
+صندلی,chair
+تخت,bed
+مبل,sofa
+کمد,closet
+آینه,mirror
+چراغ,lamp
+تلویزیون,television
+یخچال,refrigerator
+ظرف,dish
+قاشق,spoon
+چنگال,fork
+کارد,knife
+بشقاب,plate
+لیوان,glass
+فنجان,cup
+حوله,towel
+بالش,pillow
+پتو,blanket
+فرش,carpet
+ساعت,clock
+لباس,clothes
+پیراهن,shirt
+شلوار,pants
+کفش,shoe
+جوراب,sock
+کلاه,hat
+کت,coat
+دامن,skirt
+کراوات,necktie
+دستکش,glove
+شال,scarf
+کیف,bag
+عینک,glasses
+کمربند,belt
+آسمان,sky
+زمین,ground
+خورشید,sun
+ماه,moon
+ستاره,star
+ابر,cloud
+باران,rain
+برف,snow
+باد,wind
+رعد,thunder
+برق,lightning
+رنگین کمان,rainbow
+کوه,mountain
+دریا,sea
+رودخانه,river
+دریاچه,lake
+جنگل,forest
+صحرا,desert
+ساحل,beach
+درخت,tree
+گل,flower
+برگ,leaf
+علف,grass
+سنگ,stone
+شن,sand
+پرچم,flag
+نقشه,map
+موج,wave
+سایه,shadow
+آتش,fire
+دود,smoke
+خاک,soil
+یخ,ice
+جزیره,island
+غار,cave
+تپه,hill
+دشت,plain
+مه,fog
+معلم,teacher
+دانش آموز,student
+دکتر,doctor
+پرستار,nurse
+مهندس,engineer
+وکیل,lawyer
+پلیس,police
+آشپز,cook
+نانوا,baker
+کشاورز,farmer
+راننده,driver
+خلبان,pilot
+ملوان,sailor
+نویسنده,writer
+نقاش,painter
+خواننده,singer
+بازیگر,actor
+ورزشکار,athlete
+تاجر,merchant
+کارگر,worker
+مدیر,manager
+دامپزشک,veterinarian
+آتش نشان,firefighter
+سرباز,soldier
+خوشحال,happy
+ناراحت,sad
+عصبانی,angry
+خسته,tired
+ترسیده,scared
+متعجب,surprised
+آرام,calm
+نگران,worried
+هیجان زده,excited
+خجالتی,shy
+بزرگ,big
+کوچک,small
+بلند,tall
+کوتاه,short
+چاق,fat
+لاغر,thin
+زیبا,beautiful
+زشت,ugly
+تمیز,clean
+کثیف,dirty
+گرم,hot
+سرد,cold
+تازه,fresh
+قدیمی,old
+جدید,new
+سریع,fast
+آهسته,slow
+سنگین,heavy
+سبک,light
+سخت,hard
+آسان,easy
+قوی,strong
+ضعیف,weak
+دور,far
+نزدیک,near
+بالا,up
+پایین,down
+راست,right
+چپ,left
+درست,correct
+رفتن,to go
+آمدن,to come
+خوردن,to eat
+نوشیدن,to drink
+دیدن,to see
+شنیدن,to hear
+گفتن,to say
+خواندن,to read
+نوشتن,to write
+خوابیدن,to sleep
+بیدار شدن,to wake up
+دویدن,to run
+راه رفتن,to walk
+نشستن,to sit
+ایستادن,to stand
+باز کردن,to open
+بستن,to close
+خریدن,to buy
+فروختن,to sell
+دادن,to give
+گرفتن,to take
+آوردن,to bring
+بردن,to carry
+ساختن,to build
+شکستن,to break
+پختن,to cook
+شستن,to wash
+تمیز کردن,to clean
+یاد گرفتن,to learn
+یاد دادن,to teach
+فکر کردن,to think
+دانستن,to know
+فهمیدن,to understand
+پرسیدن,to ask
+جواب دادن,to answer
+کمک کردن,to help
+دوست داشتن,to like
+متنفر بودن,to hate
+گریه کردن,to cry
+خندیدن,to laugh
+بازی کردن,to play
+کار کردن,to work
+استراحت کردن,to rest
+سفر کردن,to travel
+پرواز کردن,to fly
+شنا کردن,to swim
+رقصیدن,to dance
+آواز خواندن,to sing
+نقاشی کردن,to paint
+تماس گرفتن,to call
+پیدا کردن,to find
+گم کردن,to lose
+من,I
+تو,you
+او,he she
+ما,we
+شما,you plural
+آنها,they
+این,this
+آن,that
+چه,what
+کجا,where
+کی,when
+چرا,why
+چطور,how
+کدام,which
+امروز,today
+دیروز,yesterday
+فردا,tomorrow
+هفته,week
+ماه,month
+سال,year
+دقیقه,minute
+ثانیه,second
+صبح,morning
+ظهر,noon
+عصر,afternoon
+شب,night
+نیمه شب,midnight
+حالا,now
+بعد,later
+قبل,before
+همیشه,always
+هرگز,never
+گاهی,sometimes
+لحظه,moment
+مدرسه,school
+دانشگاه,university
+بیمارستان,hospital
+بازار,market
+فروشگاه,store
+رستوران,restaurant
+پارک,park
+باغ,garden
+ایستگاه,station
+فرودگاه,airport
+بانک,bank
+کتابخانه,library
+موزه,museum
+مسجد,mosque
+کلیسا,church
+هتل,hotel
+شهر,city
+روستا,village
+خیابان,street
+کوچه,alley
+میدان,square
+کشور,country
+پایتخت,capital
+دانشکده,college
+اداره,office
+ماشین,car
+اتوبوس,bus
+قطار,train
+هواپیما,airplane
+کشتی,ship
+دوچرخه,bicycle
+موتورسیکلت,motorcycle
+تاکسی,taxi
+مترو,metro
+کامیون,truck
+قایق,boat
+چرخ,wheel
+جاده,road
+پل,bridge
+کتاب,book
+دفتر,notebook
+خودکار,pen
+مداد,pencil
+پاک کن,eraser
+تخته,board
+کلاس,classroom
+درس,lesson
+امتحان,exam
+نمره,grade
+تکلیف,homework
+پول,money
+کار,work
+زندگی,life
+دنیا,world
+جنگ,war
+صلح,peace
+عشق,love
+رویا,dream
+واقعیت,reality
+حقیقت,truth
+دروغ,lie
+راز,secret
+هدیه,gift
+جشن,celebration
+تولد,birthday
+عروسی,wedding
+موسیقی,music
+فیلم,movie
+بازی,game
+ورزش,sport
+فوتبال,football
+والیبال,volleyball
+کوهنوردی,mountaineering
+نامه,letter
+ایمیل,email
+تلفن,phone
+کامپیوتر,computer
+اینترنت,internet
+عکس,photo
+دوربین,camera
+کلید,key
+قفل,lock
+چتر,umbrella
+عصا,cane
+جعبه,box
+سبد,basket
+بطری,bottle
+آرزو,wish
+شانس,luck
+صبر,patience
