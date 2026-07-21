@@ -1,502 +1,231 @@
-farsi,english
-صفر,zero
-یک,one
-دو,two
-سه,three
-چهار,four
-پنج,five
-شش,six
-هفت,seven
-هشت,eight
-نه,nine
-ده,ten
-یازده,eleven
-دوازده,twelve
-سیزده,thirteen
-چهارده,fourteen
-پانزده,fifteen
-شانزده,sixteen
-هفده,seventeen
-هجده,eighteen
-نوزده,nineteen
-بیست,twenty
-سی,thirty
-چهل,forty
-پنجاه,fifty
-شصت,sixty
-هفتاد,seventy
-هشتاد,eighty
-نود,ninety
-صد,hundred
-هزار,thousand
-شنبه,Saturday
-یکشنبه,Sunday
-دوشنبه,Monday
-سه شنبه,Tuesday
-چهارشنبه,Wednesday
-پنجشنبه,Thursday
-جمعه,Friday
-فروردین,Farvardin
-اردیبهشت,Ordibehesht
-خرداد,Khordad
-تیر,Tir
-مرداد,Mordad
-شهریور,Shahrivar
-مهر,Mehr
-آبان,Aban
-آذر,Azar
-دی,Dey
-بهمن,Bahman
-اسفند,Esfand
-مادر,mother
-پدر,father
-برادر,brother
-خواهر,sister
-پسر,son
-دختر,daughter
-همسر,spouse
-شوهر,husband
-زن,wife
-مرد,man
-بچه,child
-نوه,grandchild
-عمو,uncle paternal
-عمه,aunt paternal
-دایی,uncle maternal
-خاله,aunt maternal
-پدربزرگ,grandfather
-مادربزرگ,grandmother
-خانواده,family
-دوست,friend
-سر,head
-مو,hair
-چشم,eye
-گوش,ear
-بینی,nose
-دهان,mouth
-لب,lip
-دندان,tooth
-زبان,tongue
-گردن,neck
-شانه,shoulder
-دست,hand
-انگشت,finger
-ناخن,nail
-بازو,arm
-پا,leg
-زانو,knee
-قلب,heart
-معده,stomach
-کمر,back
-پوست,skin
-صورت,face
-ابرو,eyebrow
-مژه,eyelash
-پیشانی,forehead
-قرمز,red
-آبی,blue
-سبز,green
-زرد,yellow
-سفید,white
-سیاه,black
-نارنجی,orange
-بنفش,purple
-صورتی,pink
-قهوه ای,brown
-خاکستری,gray
-طلایی,gold
-نقره ای,silver
-کرم,cream
-یاسی,lilac
-سگ,dog
-گربه,cat
-اسب,horse
-گاو,cow
-گوسفند,sheep
-بز,goat
-شیر,lion
-ببر,tiger
-فیل,elephant
-خرس,bear
-گرگ,wolf
-روباه,fox
-خرگوش,rabbit
-موش,mouse
-مرغ,hen
-خروس,rooster
-اردک,duck
-ماهی,fish
-مار,snake
-عقرب,scorpion
-پروانه,butterfly
-زنبور,bee
-مورچه,ant
-عنکبوت,spider
-میمون,monkey
-زرافه,giraffe
-پرنده,bird
-کبوتر,pigeon
-لاک پشت,turtle
-پلنگ,leopard
-ژله,jelly
-نان,bread
-برنج,rice
-گوشت,meat
-تخم مرغ,egg
-پنیر,cheese
-ماست,yogurt
-شیر,milk
-کره,butter
-روغن,oil
-نمک,salt
-شکر,sugar
-فلفل,pepper
-سیب,apple
-موز,banana
-پرتقال,orange fruit
-انگور,grape
-هندوانه,watermelon
-خربزه,melon
-گیلاس,cherry
-توت فرنگی,strawberry
-انار,pomegranate
-خرما,date
-گردو,walnut
-پسته,pistachio
-بادام,almond
-سیب زمینی,potato
-گوجه فرنگی,tomato
-پیاز,onion
-سیر,garlic
-هویج,carrot
-خیار,cucumber
-کاهو,lettuce
-چای,tea
-قهوه,coffee
-آب,water
-آبمیوه,juice
-سوپ,soup
-سالاد,salad
-کیک,cake
-خانه,house
-اتاق,room
-آشپزخانه,kitchen
-حمام,bathroom
-در,door
-پنجره,window
-دیوار,wall
-سقف,ceiling
-کف,floor
-میز,table
-صندلی,chair
-تخت,bed
-مبل,sofa
-کمد,closet
-آینه,mirror
-چراغ,lamp
-تلویزیون,television
-یخچال,refrigerator
-ظرف,dish
-قاشق,spoon
-چنگال,fork
-کارد,knife
-بشقاب,plate
-لیوان,glass
-فنجان,cup
-حوله,towel
-بالش,pillow
-پتو,blanket
-فرش,carpet
-ساعت,clock
-لباس,clothes
-پیراهن,shirt
-شلوار,pants
-کفش,shoe
-جوراب,sock
-کلاه,hat
-کت,coat
-دامن,skirt
-کراوات,necktie
-دستکش,glove
-شال,scarf
-کیف,bag
-عینک,glasses
-کمربند,belt
-آسمان,sky
-زمین,ground
-خورشید,sun
-ماه,moon
-ستاره,star
-ابر,cloud
-باران,rain
-برف,snow
-باد,wind
-رعد,thunder
-برق,lightning
-رنگین کمان,rainbow
-کوه,mountain
-دریا,sea
-رودخانه,river
-دریاچه,lake
-جنگل,forest
-صحرا,desert
-ساحل,beach
-درخت,tree
-گل,flower
-برگ,leaf
-علف,grass
-سنگ,stone
-شن,sand
-پرچم,flag
-نقشه,map
-موج,wave
-سایه,shadow
-آتش,fire
-دود,smoke
-خاک,soil
-یخ,ice
-جزیره,island
-غار,cave
-تپه,hill
-دشت,plain
-مه,fog
-معلم,teacher
-دانش آموز,student
-دکتر,doctor
-پرستار,nurse
-مهندس,engineer
-وکیل,lawyer
-پلیس,police
-آشپز,cook
-نانوا,baker
-کشاورز,farmer
-راننده,driver
-خلبان,pilot
-ملوان,sailor
-نویسنده,writer
-نقاش,painter
-خواننده,singer
-بازیگر,actor
-ورزشکار,athlete
-تاجر,merchant
-کارگر,worker
-مدیر,manager
-دامپزشک,veterinarian
-آتش نشان,firefighter
-سرباز,soldier
-خوشحال,happy
-ناراحت,sad
-عصبانی,angry
-خسته,tired
-ترسیده,scared
-متعجب,surprised
-آرام,calm
-نگران,worried
-هیجان زده,excited
-خجالتی,shy
-بزرگ,big
-کوچک,small
-بلند,tall
-کوتاه,short
-چاق,fat
-لاغر,thin
-زیبا,beautiful
-زشت,ugly
-تمیز,clean
-کثیف,dirty
-گرم,hot
-سرد,cold
-تازه,fresh
-قدیمی,old
-جدید,new
-سریع,fast
-آهسته,slow
-سنگین,heavy
-سبک,light
-سخت,hard
-آسان,easy
-قوی,strong
-ضعیف,weak
-دور,far
-نزدیک,near
-بالا,up
-پایین,down
-راست,right
-چپ,left
-درست,correct
-رفتن,to go
-آمدن,to come
-خوردن,to eat
-نوشیدن,to drink
-دیدن,to see
-شنیدن,to hear
-گفتن,to say
-خواندن,to read
-نوشتن,to write
-خوابیدن,to sleep
-بیدار شدن,to wake up
-دویدن,to run
-راه رفتن,to walk
-نشستن,to sit
-ایستادن,to stand
-باز کردن,to open
-بستن,to close
-خریدن,to buy
-فروختن,to sell
-دادن,to give
-گرفتن,to take
-آوردن,to bring
-بردن,to carry
-ساختن,to build
-شکستن,to break
-پختن,to cook
-شستن,to wash
-تمیز کردن,to clean
-یاد گرفتن,to learn
-یاد دادن,to teach
-فکر کردن,to think
-دانستن,to know
-فهمیدن,to understand
-پرسیدن,to ask
-جواب دادن,to answer
-کمک کردن,to help
-دوست داشتن,to like
-متنفر بودن,to hate
-گریه کردن,to cry
-خندیدن,to laugh
-بازی کردن,to play
-کار کردن,to work
-استراحت کردن,to rest
-سفر کردن,to travel
-پرواز کردن,to fly
-شنا کردن,to swim
-رقصیدن,to dance
-آواز خواندن,to sing
-نقاشی کردن,to paint
-تماس گرفتن,to call
-پیدا کردن,to find
-گم کردن,to lose
-من,I
-تو,you
-او,he she
-ما,we
-شما,you plural
-آنها,they
-این,this
-آن,that
-چه,what
-کجا,where
-کی,when
-چرا,why
-چطور,how
-کدام,which
-امروز,today
-دیروز,yesterday
-فردا,tomorrow
-هفته,week
-ماه,month
-سال,year
-دقیقه,minute
-ثانیه,second
-صبح,morning
-ظهر,noon
-عصر,afternoon
-شب,night
-نیمه شب,midnight
-حالا,now
-بعد,later
-قبل,before
-همیشه,always
-هرگز,never
-گاهی,sometimes
-لحظه,moment
-مدرسه,school
-دانشگاه,university
-بیمارستان,hospital
-بازار,market
-فروشگاه,store
-رستوران,restaurant
-پارک,park
-باغ,garden
-ایستگاه,station
-فرودگاه,airport
-بانک,bank
-کتابخانه,library
-موزه,museum
-مسجد,mosque
-کلیسا,church
-هتل,hotel
-شهر,city
-روستا,village
-خیابان,street
-کوچه,alley
-میدان,square
-کشور,country
-پایتخت,capital
-دانشکده,college
-اداره,office
-ماشین,car
-اتوبوس,bus
-قطار,train
-هواپیما,airplane
-کشتی,ship
-دوچرخه,bicycle
-موتورسیکلت,motorcycle
-تاکسی,taxi
-مترو,metro
-کامیون,truck
-قایق,boat
-چرخ,wheel
-جاده,road
-پل,bridge
-کتاب,book
-دفتر,notebook
-خودکار,pen
-مداد,pencil
-پاک کن,eraser
-تخته,board
-کلاس,classroom
-درس,lesson
-امتحان,exam
-نمره,grade
-تکلیف,homework
-پول,money
-کار,work
-زندگی,life
-دنیا,world
-جنگ,war
-صلح,peace
-عشق,love
-رویا,dream
-واقعیت,reality
-حقیقت,truth
-دروغ,lie
-راز,secret
-هدیه,gift
-جشن,celebration
-تولد,birthday
-عروسی,wedding
-موسیقی,music
-فیلم,movie
-بازی,game
-ورزش,sport
-فوتبال,football
-والیبال,volleyball
-کوهنوردی,mountaineering
-نامه,letter
-ایمیل,email
-تلفن,phone
-کامپیوتر,computer
-اینترنت,internet
-عکس,photo
-دوربین,camera
-کلید,key
-قفل,lock
-چتر,umbrella
-عصا,cane
-جعبه,box
-سبد,basket
-بطری,bottle
-آرزو,wish
-شانس,luck
-صبر,patience
+farsi,english,pronunciation,level
+تحلیل,analysis,tahlil,C1
+تحلیل‌کردن,to analyze,tahlil kardan,C1
+استدلال,reasoning; argument,estedlâl,C1
+استدلال‌کردن,to reason; to argue logically,estedlâl kardan,C1
+استنباط,inference,estenbât,C1
+استنباط‌کردن,to infer,estenbât kardan,C1
+برداشت,interpretation; inference,bardâsht,C1
+تعبیر,interpretation; expression,ta'bir,C1
+تفسیر,interpretation; commentary,tafsir,C1
+تبیین,explanation; clarification,tabyin,C1
+تشریح,detailed explanation,tashrih,C1
+توضیح,explanation,tozih,C1
+توجیه,justification; rationalization,towjih,C1
+توجیه‌کردن,to justify,towjih kardan,C1
+فرضیه,hypothesis,farziye,C1
+نظریه,theory,nazariye,C1
+چارچوب,framework,chârchub,C1
+مفهوم,concept,mafhum,C1
+مصداق,instance; example,mesdâq,C1
+مقوله,category; topic,maqoleh,C1
+رویکرد,approach; perspective,ruykard,C1
+دیدگاه,viewpoint,didgâh,C1
+چشم‌انداز,prospect; outlook,cheshm-andâz,C1
+نگرش,attitude; perspective,negaresh,C1
+بینش,insight,binesh,C1
+ادراک,perception,edrâk,C1
+شناخت,cognition; understanding,shenâkht,C1
+آگاهی,awareness,âgâhi,C1
+خودآگاهی,self-awareness,khodâgâhi,C1
+درک,understanding,dark,C1
+فهم,comprehension,fahm,C1
+قضاوت,judgment,qezâvat,C1
+داوری,judgment; evaluation,dâvari,C1
+ارزیابی,evaluation,arzyâbi,C1
+ارزیابی‌کردن,to evaluate,arzyâbi kardan,C1
+سنجش,assessment,sanjesh,C1
+محاسبه,calculation,mohâsebe,C1
+برآورد,estimate,barâvard,C1
+برآورد‌کردن,to estimate,barâvard kardan,C1
+پیش‌بینی,prediction,pishbini,C1
+پیش‌بینی‌کردن,to predict,pishbini kardan,C1
+پیامد,consequence,payâmad,C1
+عاقبت,outcome; consequence,âqebat,C1
+نتیجه,outcome; result,natije,C1
+رهیافت,approach; methodology,rahyâft,C1
+فرایند,process,farâyand,C1
+روند,trend; process,ravand,C1
+تحول,transformation,tahavvol,C1
+دگرگونی,change; transformation,dargarguni,C1
+دگرگون‌کردن,to transform,dargargun kardan,C1
+تغییر,change,taghyir,C1
+دگرسانی,alteration,dargarsâni,C1
+ثبات,stability,sabât,C1
+پایداری,sustainability; stability,pâydâri,C1
+تداوم,continuation,tadâvom,C1
+استمرار,continuity,estemrâr,C1
+وقفه,interruption,vaqfe,C1
+اختلال,disruption,ekhtelâl,C1
+انسجام,coherence; cohesion,ensijâm,C1
+هماهنگی,coordination; harmony,hamâhangi,C1
+ناهماهنگی,inconsistency,nâhamâhangi,C1
+تضاد,contradiction; contrast,tazâd,C1
+تناقض,contradiction,tanâqoz,C1
+توافق,agreement,tavâfoq,C1
+اجماع,consensus,ejmâ',C1
+اختلاف,disagreement,ekhtelâf,C1
+مناقشه,dispute,monâqeshe,C1
+مجادله,argument; dispute,mojâdele,C1
+بحث,discussion,bahs,C1
+گفت‌وگو,dialogue,goft-o-gu,C1
+مذاکره,negotiation,mozâkere,C1
+چانه‌زنی,bargaining,châne-zani,C1
+مصالحه,compromise; settlement,mosâlehe,C1
+سازش,compromise,sâzesh,C1
+تقابل,confrontation,taqâbol,C1
+رویارویی,confrontation,ruyâruyi,C1
+مواجهه,encounter; confrontation,movâjehe,C1
+واکنش,reaction,vâkonesh,C1
+کنش,action,konesh,C1
+تعامل,interaction,ta'âmol,C1
+همکاری,cooperation,hamkâri,C1
+مشارکت,participation,moshârekat,C1
+سهیم‌شدن,to participate,sahim shodan,C1
+مداخله,intervention,modâkhele,C1
+دخالت,interference,dekhâlat,C1
+نفوذ,influence; penetration,nofuz,C1
+اثرگذاری,influence,asargozâri,C1
+تأثیر,influence; effect,tasir,C1
+تأثیرگذار,influential,tasirgozâr,C1
+تحت‌تأثیر,affected by,taht-e tasir,C1
+استقلال,independence,esteqlâl,C1
+وابستگی,dependence,vâbastegi,C1
+وابسته,dependent,vâbaste,C1
+خودمختاری,autonomy,khodmokhtâri,C1
+اقتدار,authority; power,eqtedâr,C1
+صلاحیت,competence; authority,salâhiyat,C1
+شایستگی,competence,shâyestegi,C1
+کارآمدی,efficiency;kârâmadi,C1
+بهره‌وری,productivity,bahrevari,C1
+کارایی,efficiency,kârâyi,C1
+اثربخشی,effectiveness,asarbakhshi,C1
+ظرفیت,capacity,zarfiyat,C1
+قابلیت,capability,qâbeliyat,C1
+توانمندی,capability,tavânmandi,C1
+توان بالقوه,potential,tavân-e belqove,C1
+محدودیت,limitation,mahdudiyat,C1
+مانع,obstacle,mâne',C1
+چالش,challenge,châlesh,C1
+دشواری,difficulty,doshvâri,C1
+پیچیدگی,complexity,pichidegi,C1
+ابهام,ambiguity,ebhâm,C1
+شفافیت,transparency,shafâfiyat,C1
+وضوح,clarity,vozuh,C1
+دقت,accuracy,deqqat,C1
+صحت,correctness; validity,sehhat,C1
+اعتبار,validity; credibility,etebâr,C1
+قابلیت‌اعتماد,reliability,qâbeliyat-e etemâd,C1
+اطمینان,confidence; certainty,etminân,C1
+یقین,certainty,yaqin,C1
+تردید,doubt,tardid,C1
+احتمال,probability,ehtemâl,C1
+امکان,possibility,emkân,C1
+ضرورت,necessity,zarurat,C1
+الزام,obligation; requirement,elzâm,C1
+تعهد,commitment,ta'ahhod,C1
+مسئولیت,responsibility,mas'uliyat,C1
+پاسخگویی,accountability,pâsokhgui,C1
+پاسخگو,accountable,pâsokhgu,C1
+تعهد‌سپاری,delegation of responsibility,ta'ahhod-sepâri,C1
+اختیار,authority; discretion,ekhtiyâr,C1
+اختیار‌دادن,to authorize,ekhtiyâr dâdan,C1
+تصمیم,decision,tasmim,C1
+تصمیم‌گیری,decision-making,tasmim-giri,C1
+قاطعیت,decisiveness,qâte'iyat,C1
+تردید‌کردن,to hesitate,tardid kardan,C1
+تأمل,reflection; deliberation,ta'ammol,C1
+اندیشه,thought,andishe,C1
+اندیشیدن,to contemplate,andishidan,C1
+تفکر,thinking; reflection,tafakkor,C1
+تفکر انتقادی,critical thinking,tafakkor-e enteqâdi,C1
+خلاقیت,creativity,khallâqiyat,C1
+نوآوری,innovation,nowâvari,C1
+ابداع,invention; innovation,ebdâ',C1
+ابداع‌کردن,to devise; invent,ebdâ' kardan,C1
+ابتکار,initiative; ingenuity,ebtekâr,C1
+ابتکارعمل,initiative,ebtekâr-e amal,C1
+الهام,inspiration,elhâm,C1
+الهام‌بخش,inspiring,elhâm-bakhsh,C1
+انگیزه,motivation,angize,C1
+برانگیختن,to motivate,barangikhtan,C1
+ترغیب,encouragement; persuasion,targhib,C1
+ترغیب‌کردن,to encourage,targhib kardan,C1
+اقناع,persuasion,eqnâ',C1
+اقناع‌کردن,to convince,eqnâ' kardan,C1
+متقاعد,convinced,moteqâ'ed,C1
+متقاعد‌کردن,to persuade,moteqâ'ed kardan,C1
+اعتراض,objection; protest,e'terâz,C1
+اعتراض‌کردن,to object,e'terâz kardan,C1
+انتقاد,criticism,enteqâd,C1
+انتقاد‌کردن,to criticize,enteqâd kardan,C1
+نقد,critique; criticism,naqd,C1
+نقد‌کردن,to critique,naqd kardan,C1
+ستایش,praise,setâyesh,C1
+تحسین,admiration,tahsin,C1
+تحسین‌کردن,to admire,tahsin kardan,C1
+سرزنش,reproach,sarzanes h,C1
+سرزنش‌کردن,to reproach,sarzanesh kardan,C1
+ملامت,blame,malâmat,C1
+محکوم‌کردن,to condemn,mahkum kardan,C1
+تأیید,approval; confirmation,ta'yid,C1
+تأیید‌کردن,to approve,ta'yid kardan,C1
+رد,rejection; refusal,radd,C1
+رد‌کردن,to reject,radd kardan,C1
+پذیرش,acceptance,pazira sh,C1
+پذیرفتن,to accept,paziroftan,C1
+امتناع,refusal,emtenâ',C1
+امتناع‌کردن,to refrain; refuse,emtenâ' kardan,C1
+اصرار,insistence,esrâr,C1
+اصرار‌کردن,to insist,esrâr kardan,C1
+اصرارورزیدن,to persist,esrâr varzidan,C1
+پافشاری,persistence,pâfeshâri,C1
+پافشاری‌کردن,to persist,pâfeshâri kardan,C1
+انعطاف‌پذیری,flexibility,en'etâf-paziri,C1
+انعطاف‌ناپذیر,inflexible,en'etâf-napazir,C1
+سازگاری,adaptability,sâzegâri,C1
+سازگار,compatible;sâzegâr,C1
+ناسازگار,incompatible,nâsâzegâr,C1
+انطباق,adaptation; conformity,entebâq,C1
+انطباق‌دادن,to adapt,entebâq dâdan,C1
+تطبیق,matching; adaptation,tatbiq,C1
+تطبیق‌دادن,to match; adapt,tatbiq dâdan,C1
+هماهنگ‌کردن,to coordinate,hamâhang kardan,C1
+متعادل,balanced,mota'âdel,C1
+تعادل,balance,ta'âdol,C1
+عدم‌تعادل,imbalance,adam-e ta'âdol,C1
+افراط,excess,efrât,C1
+تفریط,negligence; deficiency,tafrit,C1
+میانه‌روی,moderation,miyâne-ravi,C1
+اعتدال,moderation,e'tedâl,C1
+افزایش,increase,afzâyesh,C1
+افزایش‌یافتن,to increase,afzâyesh yâftan,C1
+کاهش,decrease,kâhesh,C1
+کاهش‌یافتن,to decrease,kâhesh yâftan,C1
+گسترش,expansion,gostaresh,C1
+گسترش‌یافتن,to expand,gostaresh yâftan,C1
+توسعه,development,towse'e,C1
+توسعه‌یافتن,to develop,towse'e yâftan,C1
+رشد,growth,roshd,C1
+رکود,stagnation; recession,rokud,C1
+نزول,decline,nozul,C1
+صعود,rise; ascent,so'ud,C1
+پیشرفت,progress,pishraft,C1
+پیشروی,advancement,pishravi,C1
+عقب‌ماندگی,backwardness,aqab-mândegi,C1
+پسرفت,regression,pasraft,C1
+بهبود,improvement,behbud,C1
+بهبود‌یافتن,to improve,behbud yâftan,C1
+وخامت,deterioration,vakhâmat,C1
+بدتر‌شدن,to worsen,badtar shodan,C1
+تقویت,reinforcement,taqviyat,C1
+تقویت‌کردن,to strengthen,taqviyat kardan,C1
+تضعیف,weakening,taz'if,C1
+تضعیف‌کردن,to weaken,taz'if kardan,C1
+حفظ,preservation,hefz,C1
+حفظ‌کردن,to preserve,hefz kardan,C1
+صیانت,protection;safeguarding,seyânat,C1
+پشتیبانی,support,poshtibâni,C1
+پشتیبانی‌کردن,to support,poshtibâni kardan,C1
+حمایت,support; advocacy,hemâyat,C1
+حمایت‌کردن,to support,hemâyat kardan,C1

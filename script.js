@@ -50,6 +50,46 @@
   let WORDS = [];
   let lastIndex = -1;
 
+  // Minimal quote-aware CSV line splitter (handles "quoted, fields" and "" escapes).
+  function parseCsvLine(line) {
+    const fields = [];
+    let cur = "";
+    let inQuotes = false;
+    for (let i = 0; i < line.length; i++) {
+      const c = line[i];
+      if (inQuotes) {
+        if (c === '"') {
+          if (line[i + 1] === '"') {
+            cur += '"';
+            i++;
+          } else {
+            inQuotes = false;
+          }
+        } else {
+          cur += c;
+        }
+      } else if (c === '"') {
+        inQuotes = true;
+      } else if (c === ",") {
+        fields.push(cur);
+        cur = "";
+      } else {
+        cur += c;
+      }
+    }
+    fields.push(cur);
+    return fields.map((f) => f.trim());
+  }
+
+  // Find the first header (by name, case-insensitive) matching any of the given aliases.
+  function findColumn(headers, aliases) {
+    for (const alias of aliases) {
+      const idx = headers.indexOf(alias);
+      if (idx !== -1) return idx;
+    }
+    return -1;
+  }
+
   async function loadWords() {
     const statusEl = document.getElementById("loadStatus");
     try {
@@ -57,21 +97,40 @@
       if (!res.ok) throw new Error("HTTP " + res.status);
       const text = await res.text();
       const lines = text.split(/\r?\n/).filter((l) => l.trim().length > 0);
-      lines.shift(); // header row
+
+      const headerLine = lines.shift();
+      const headers = parseCsvLine(headerLine || "").map((h) => h.toLowerCase());
+
+      // Columns are matched by name so adding unrelated columns later can
+      // never accidentally get read as pronunciation (or anything else).
+      let farsiIdx = findColumn(headers, ["farsi", "word", "persian"]);
+      let enIdx = findColumn(headers, ["english", "en", "meaning", "translation", "definition"]);
+      const pronIdx = findColumn(headers, ["pronunciation", "pron", "transliteration", "phonetic"]);
+
+      // Fall back to the original two-column position only if no header
+      // names matched at all (keeps old plain "farsi,english" files working).
+      if (farsiIdx === -1 && enIdx === -1) {
+        farsiIdx = 0;
+        enIdx = 1;
+      }
+
       WORDS = lines
         .map((line) => {
-          const idx = line.indexOf(",");
-          if (idx === -1) return null;
-          return { farsi: line.slice(0, idx).trim(), en: line.slice(idx + 1).trim() };
+          const fields = parseCsvLine(line);
+          const farsi = farsiIdx !== -1 ? fields[farsiIdx] || "" : "";
+          const en = enIdx !== -1 ? fields[enIdx] || "" : "";
+          const pronunciation = pronIdx !== -1 ? fields[pronIdx] || "" : "";
+          return { farsi, en, pronunciation };
         })
-        .filter((w) => w && w.farsi);
-      if (statusEl) statusEl.textContent = "translation";
+        .filter((w) => w.farsi);
+
+      if (statusEl) statusEl.textContent = "";
     } catch (err) {
       console.error("Could not load words.csv:", err);
       if (statusEl) {
         statusEl.textContent = "couldn't load words.csv";
       }
-      document.getElementById("translation").textContent =
+      document.getElementById("definitionText").textContent =
         "Serve this folder with a local web server (e.g. \"python3 -m http.server\") and reload — browsers block file:// requests for words.csv.";
     }
   }
@@ -96,8 +155,8 @@
   let confirmedText = ""; // Farsi characters typed correctly so far, this word
 
   function renderWord(word) {
-    document.getElementById("farsiWord").textContent = word.farsi;
-    document.getElementById("translation").textContent = word.en;
+    document.getElementById("pronunciationText").textContent = word.pronunciation || "";
+    document.getElementById("definitionText").textContent = word.en || "";
 
     letters = Array.from(word.farsi).map((ch) => {
       const info = FARSI_TO_KEY[ch] || { base: null, shift: false };
@@ -109,6 +168,19 @@
 
     const typerReset = document.getElementById("typer");
     if (typerReset) typerReset.value = "";
+
+    // Build the big Farsi word out of one <span> per letter (kept as plain
+    // inline elements, no layout properties) so the browser still shapes
+    // and joins the Persian script normally, while letting us color each
+    // letter individually as it's typed correctly.
+    const farsiWordEl = document.getElementById("farsiWord");
+    farsiWordEl.innerHTML = "";
+    letters.forEach((l) => {
+      const span = document.createElement("span");
+      span.className = "word-letter";
+      span.textContent = l.char;
+      farsiWordEl.appendChild(span);
+    });
 
     const tilesEl = document.getElementById("tiles");
     tilesEl.innerHTML = "";
@@ -303,6 +375,9 @@
     if (!letters.length) return;
     if (e.ctrlKey || e.altKey || e.metaKey) return;
 
+    const settingsModal = document.getElementById("settingsModal");
+    if (settingsModal && !settingsModal.hidden) return;
+
     // Non-character keys (Backspace, Tab, Enter, arrows, Shift alone, etc.)
     // are ignored entirely — they're not typing attempts, right or wrong.
     if (e.key.length !== 1) {
@@ -340,9 +415,13 @@
     const tileEl = tiles[posIndex];
     if (!tileEl) return;
 
+    const wordLetterEls = document.querySelectorAll("#farsiWord .word-letter");
+    const letterEl = wordLetterEls[posIndex];
+
     if (isCorrect) {
       tileEl.classList.remove("active");
       tileEl.classList.add("correct");
+      if (letterEl) letterEl.classList.add("correct");
       posIndex += 1;
       sessionCorrectChars += 1;
       todayStats.correctChars += 1;
@@ -359,6 +438,11 @@
       tileEl.classList.add("wrong");
       setTimeout(() => tileEl.classList.remove("wrong"), 300);
       todayStats.mistakes += 1;
+
+      if (letterEl) {
+        letterEl.classList.add("wrong");
+        setTimeout(() => letterEl.classList.remove("wrong"), 300);
+      }
 
       // Briefly preview the wrong character, then fall back to whatever
       // was correctly typed so far.
@@ -383,27 +467,104 @@
   });
 
   /* =========================================================
-     8. Theme toggle
+     8. Settings modal (theme, key hint, definition, pronunciation)
      ========================================================= */
 
-  function updateThemeIcon(theme) {
-    const btn = document.getElementById("themeToggle");
-    if (btn) btn.textContent = theme === "dark" ? "☀" : "☾";
+  const APP_EL = document.querySelector(".app");
+
+  function initSettings() {
+    const savedTheme = localStorage.getItem("vajehTyping_theme") || "dark";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+
+    const hideHints = localStorage.getItem("vajehTyping_hideHints") === "true";
+    const hideDefinition = localStorage.getItem("vajehTyping_hideDefinition") === "true";
+    const hidePronunciation = localStorage.getItem("vajehTyping_hidePronunciation") === "true";
+
+    if (APP_EL) {
+      APP_EL.classList.toggle("hide-hints", hideHints);
+      APP_EL.classList.toggle("hide-definition", hideDefinition);
+      APP_EL.classList.toggle("hide-pronunciation", hidePronunciation);
+    }
+
+    const darkModeSwitch = document.getElementById("darkModeSwitch");
+    const keyHintSwitch = document.getElementById("keyHintSwitch");
+    const definitionSwitch = document.getElementById("definitionSwitch");
+    const pronunciationSwitch = document.getElementById("pronunciationSwitch");
+
+    if (darkModeSwitch) darkModeSwitch.checked = savedTheme === "dark";
+    if (keyHintSwitch) keyHintSwitch.checked = !hideHints;
+    if (definitionSwitch) definitionSwitch.checked = !hideDefinition;
+    if (pronunciationSwitch) pronunciationSwitch.checked = !hidePronunciation;
   }
 
-  function initTheme() {
-    const saved = localStorage.getItem("vajehTyping_theme");
-    const theme = saved || "dark";
-    document.documentElement.setAttribute("data-theme", theme);
-    updateThemeIcon(theme);
+  function wireSettingsSwitches() {
+    const darkModeSwitch = document.getElementById("darkModeSwitch");
+    const keyHintSwitch = document.getElementById("keyHintSwitch");
+    const definitionSwitch = document.getElementById("definitionSwitch");
+    const pronunciationSwitch = document.getElementById("pronunciationSwitch");
+
+    if (darkModeSwitch) {
+      darkModeSwitch.addEventListener("change", (e) => {
+        const theme = e.target.checked ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("vajehTyping_theme", theme);
+      });
+    }
+
+    if (keyHintSwitch) {
+      keyHintSwitch.addEventListener("change", (e) => {
+        const visible = e.target.checked;
+        if (APP_EL) APP_EL.classList.toggle("hide-hints", !visible);
+        localStorage.setItem("vajehTyping_hideHints", String(!visible));
+      });
+    }
+
+    if (definitionSwitch) {
+      definitionSwitch.addEventListener("change", (e) => {
+        const visible = e.target.checked;
+        if (APP_EL) APP_EL.classList.toggle("hide-definition", !visible);
+        localStorage.setItem("vajehTyping_hideDefinition", String(!visible));
+      });
+    }
+
+    if (pronunciationSwitch) {
+      pronunciationSwitch.addEventListener("change", (e) => {
+        const visible = e.target.checked;
+        if (APP_EL) APP_EL.classList.toggle("hide-pronunciation", !visible);
+        localStorage.setItem("vajehTyping_hidePronunciation", String(!visible));
+      });
+    }
   }
 
-  function toggleTheme() {
-    const cur = document.documentElement.getAttribute("data-theme");
-    const next = cur === "dark" ? "light" : "dark";
-    document.documentElement.setAttribute("data-theme", next);
-    localStorage.setItem("vajehTyping_theme", next);
-    updateThemeIcon(next);
+  function openSettings() {
+    const modal = document.getElementById("settingsModal");
+    if (modal) modal.hidden = false;
+  }
+
+  function closeSettings() {
+    const modal = document.getElementById("settingsModal");
+    if (modal) modal.hidden = true;
+    const typer = document.getElementById("typer");
+    if (typer) typer.focus();
+  }
+
+  function wireSettingsModal() {
+    const settingsBtn = document.getElementById("settingsBtn");
+    const closeBtn = document.getElementById("closeSettings");
+    const modal = document.getElementById("settingsModal");
+
+    if (settingsBtn) settingsBtn.addEventListener("click", openSettings);
+    if (closeBtn) closeBtn.addEventListener("click", closeSettings);
+
+    if (modal) {
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) closeSettings();
+      });
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal && !modal.hidden) closeSettings();
+    });
   }
 
   /* =========================================================
@@ -411,9 +572,9 @@
      ========================================================= */
 
   async function init() {
-    initTheme();
-    const themeBtn = document.getElementById("themeToggle");
-    if (themeBtn) themeBtn.addEventListener("click", toggleTheme);
+    initSettings();
+    wireSettingsSwitches();
+    wireSettingsModal();
 
     renderStatsPanel();
 
