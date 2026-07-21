@@ -129,12 +129,9 @@ Future ideas include:
 
 - Frequency-based vocabulary lists
 - Example sentences
-- Audio pronunciation
 - Difficulty filtering
-- User statistics
-- Custom word lists
-- Mobile improvements
-- Search and dictionary mode
+- More user statistics
+- Category based words
 
 Suggestions and feature requests are always welcome.
 
