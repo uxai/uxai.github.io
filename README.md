@@ -60,7 +60,7 @@ Each CSV uses the following columns:
 The CSV header is:
 
 ```csv
-Farsi,English,Pronunciation,Level
+farsi,english,pronunciation,level
 ```
 
 When contributing vocabulary:
